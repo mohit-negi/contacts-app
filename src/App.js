@@ -2,13 +2,21 @@ import React from "react"
 import './App.css';
 
 const Person = () => {
+  const url = "https://randomuser.me/api/portraits/thumb/men/89.jpg";
   return (
-    <div>I'm person</div>
+    <div className="person">
+      <img src={url} alt="Profile-image"></img>
+      <div className="profile-description">
+        <h4>Name</h4>
+        <h4>Job description</h4>
+      </div>
+    </div>
   )
 }
 const Personlist = () => {
+  //adding random images url which generates random image for productivity
   return (
-    <Person></Person>
+    <Person/>
   )
 }
 const App = () => (<Personlist/>);
