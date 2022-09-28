@@ -34,7 +34,6 @@ const Personlist = () => {
 
 const Person = (props) => {
   const {img,name,job,desc} = props.person;
-  const {children} = props;
   const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
   return (
     <div className="person">
