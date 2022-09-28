@@ -37,7 +37,7 @@ const Person = (props) => {
   const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
   return (
     <div className="person">
-      <img src={url} alt="Profile-image"></img>
+      <img src={url} alt="Profile"></img>
       <div className="profile-description">
         <h4>{name}</h4>
         <h4>{job}</h4>
